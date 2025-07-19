@@ -1,0 +1,8 @@
+n=int(input("enter the number of student"))
+res=0
+num=1
+while(n>0):
+    res= "100"+ str(num)
+    print(res)
+    num+=1
+    n=n-1
