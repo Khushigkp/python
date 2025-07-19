@@ -1,0 +1,14 @@
+amount=int(input("Enter your total bill amount : "))
+result=0
+if amount>5000:
+    result = amount - (20*5000)/100
+    print("you  get  20% discount")
+    print( "your total amount to pay is : " ,result)
+elif amount<=2000 and amount <5000:
+    result = amount - (10*5000)/100
+    print("you  get  10% discount")
+    print( "your total amount to pay is : " ,result)
+    
+else:
+    print("you does not get discount")
+    print( "your total amount to pay is : " ,amount) 
