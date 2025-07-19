@@ -1,0 +1,13 @@
+p=int(input("how many students are in the class. "))
+res="no"
+count=0
+n=1
+while(n<=p):
+    res=(input(f"enter student {n} is present or not "))
+    if res.lower() == "yes" :
+        count += 1
+        n +=1
+    else:
+         n+=1
+print("Number of student present are", count)
+  
