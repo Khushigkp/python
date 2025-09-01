@@ -1,3 +1,4 @@
+## study more about the frozenSet
 students = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank"]
 python_enrolled = ["Alice", "Charlie", "Eva"]
 ml_enrolled = ["Bob", "Charlie", "David", "Eva"]
