@@ -1,24 +1,32 @@
-students = {"Ram":90 ,"Shayam": 85 , "Krishna": 86 , "Pawan":80}
-print(type(students));
-##Add a new student 'Alice' with the average score of all the original 4 students
-avg = sum(students.values())/len(students);
-students["Alice"]=avg
-print(students);
-##Remove the student who has the lowest score using
-lowest_marks = min(students , key=students.get);
-del students[lowest_marks];
-print(students);
-## Remove the student who has the lowest score using
-students.popitem()
-print(students);
-##Remove the last added student and store their score in a new key called 'Archived'
-achieved = students.popitem()
-print(achieved)
-## Delete the first key 
-##firstKey=students.pop("Ram")
-first_key=next(iter(students))
-##print(first_key)
-print(students);
+scores = {"ram":98 ,"shyam":90 ,"arav":100 ,"Das":95 }
+print(scores)
+avg=sum(scores.values())/len(scores)
+scores.update({"alic" : avg})
+print(scores)
+# scores['ali']=avg
+# print(scores)
+# Remove the student who has the lowest score using
+# a=min(scores.values())
+# key=scores.get(a)
+key = min(scores, key=scores.get)
+scores.pop(key)
+print(scores)
+# Remove the last added student and store their score in a new key called 'Archived'.
+achieved=scores.popitem()
+print(scores)
+# Delete the first key .
+f=next(iter(scores))
+scores.pop(f)
+print(scores)
+# Clear the entire dictionary only if the number of remaining keys is less than 2.
+if len(scores)<2:
+    scores.clear()
+# print(scores)If the dictionary is empty, re-initialize it with any 2 key-value pairs and print only the values using dictionary methods.
+
+if not scores:
+    scores={"java":100 , "dsa":100}
+    print(scores)
+
 
 
 
